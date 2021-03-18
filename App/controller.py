@@ -59,6 +59,7 @@ def loadBooks(catalog):
     modelo que debe adicionarlo al catalogo.
     """
     booksfile = cf.data_dir + 'GoodReads/books-small.csv'
+    #booksfile = "D:\\Uniandes\\Clases\\Semestre 2 2021 I\\EDA\\Reto\\Reto1-G10\\Data\\GoodReads\\books-small.csv"
     input_file = csv.DictReader(open(booksfile, encoding='utf-8'))
     for book in input_file:
         model.addBook(catalog, book)
